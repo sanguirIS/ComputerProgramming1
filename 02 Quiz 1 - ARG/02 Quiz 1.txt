@@ -1,0 +1,1 @@
+Write a Java program that displays at least four (4) lines of your favorite song. Name the class as FavoriteSong.java and add meaningful comments to the class. 

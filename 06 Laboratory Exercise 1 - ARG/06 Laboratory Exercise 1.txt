@@ -1,0 +1,17 @@
+Using NetBeans, create a program that computes and displays a game character's attack speed at a certain level. Use the formula below.
+
+Current attack speed = Base attack speed * (1 + (Bonus attack speed % * (Level - 1)))
+
+The variable for level should be of int type. The bonus attack speed % should be converted to decimal (divide by 100) before multiplying by the level. For example, if the user enters 4% for the bonus attack speed, the formula will use 0.04 instead of 4. Round the current attack speed to the nearest three (3) decimal places.
+
+ 
+
+Sample output:
+
+Enter the base attack speed: 0.658
+
+Enter the bonus attack speed %: 4
+
+Enter the level: 10
+
+The character's current attack speed is 0.895. 

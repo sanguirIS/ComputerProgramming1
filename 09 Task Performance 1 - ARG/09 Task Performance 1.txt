@@ -1,0 +1,34 @@
+Create a Java program that asks the user to enter three (3) first names then display the following:
+
+All the possible two-name combinations (Ask the user to select a name by entering 1 to 6.)
+The initials of the chosen combined name (Ex. John Ryan = JR)
+Suggested username based on the combined name (The name will be in small letters and the space will be changed to underscore. Ex. John Ryan = john_ryan)
+Sample output:
+
+Enter three first names:
+
+Mark
+
+Ryan
+
+John
+
+Possible names are:
+
+1 - Mark Ryan
+
+2 - Mark John
+
+3 - Ryan Mark
+
+4 - Ryan John
+
+5 - John Mark
+
+6 - John Ryan
+
+Enter 1-6 to select a name: 6
+
+The initials for John Ryan is JR.
+
+Suggested username: john_ryan

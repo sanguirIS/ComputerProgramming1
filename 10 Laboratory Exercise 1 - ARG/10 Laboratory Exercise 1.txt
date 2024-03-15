@@ -1,0 +1,42 @@
+1. Create a folder named LastName_FirstName (ex. Diaz_Jess) on your local drive.
+2. Using NetBeans IDE, create a new project.
+3. Name the class as SeatReservation and save the project in your folder
+4. Write a simple bus seat reservation program. The bus has 10 rows, with 4 seats in each row. The program should perform the following:
+Step 1. The program should ask the user to enter what row and seat number to reserve. Indicate an 'X' mark if the seat is reserved.
+Step 2. Repeat Step 1; the program will stop until the user enters a negative number.
+5. Compile and execute the program.
+6. Debug syntax and logical errors, if there are any in the program.
+7. Inform your instructor once you are done.
+8. The following is the example output:
+Bus Seat Reservation:
+Col 1
+Col 2
+Row 1
+Col 3
+Col 4
+*
+|*
+*
+1*
+|*
+*
+*
+*
+*
+*
+Row 2
+Row 3
+Row 4
+Row 5
+Row 6
+|*
+*
+*
+*
+*
+*
+Row 7
+Row 8
+Row 9
+Row 10 *
+Enter row and column number to reserve separated by space (Enter a negative number to exit): 43

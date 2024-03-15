@@ -1,0 +1,15 @@
+1. Write a program that will ask the user to enter his/her name initials - first and last name, and then output a greeting that says "Hello", followed by the user's initials and an exclamation mark. Save the program as GreetInitials.java.
+Example:
+Please enter your initials: J D
+Hello J D!
+If the user's initials are stored in the two variables: firstInitial and lastInitial, both of type char, the output can be produced by the following statement: System.out.println("Hello + firstInitial + + lastInitial + "!");
+2
+. Write a program that prints the initials of the full name entered by the user. Save the program as PrintInitials.java.
+Example:
+Please enter your full name: Juan Dela Cruz
+Your initials are: J, D, C
+3. Write a program that will ask the user to enter two numbers and then compare if the numbers entered are equal or not. Display a message informing the user if the numbers are equal and not equal. Save the program as Equality.java.
+Example:
+Please enter the first number: 2
+Please enter the second number: 3
+2 and 3 are not equal.

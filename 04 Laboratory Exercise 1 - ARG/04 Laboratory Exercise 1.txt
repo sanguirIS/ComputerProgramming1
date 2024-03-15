@@ -1,0 +1,12 @@
+Perform the following using NetBeans. Create a project named BSISData and class names Operators_TP
+
+1. Write a Java program that calculates and prints the monthly pay for an employee.
+
+The net pay is calculated after taking the following deductions:
+
+Specifics	Deduction	Variable/Constant Name
+Government Tax	15%	gov_tax
+Mandatory Contribution	3.63%	sss_contri
+Healthcare	1.25%	medic
+HMDF	PHP 100.00	hmdf
+2. Initialize two (2) variables to hold the employee name and the salary (amount before deductions). See sample output below.

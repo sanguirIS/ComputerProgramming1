@@ -1,0 +1,163 @@
+1. Write a Java program which displays leap years from 1900 to 2400 starting from the user's valid input.
+Take note of the following:
+A year is a leap year (and so contains a February 29) if it is divisible by 4. But if the year is also divisible by 100 then it is not a leap year, unless it is divisible by 400. This means that years such as 1992 and 1996 are leap years because they are divisible by 4 and are not affected by the rest of the rule which applies to century years such as 1900 and 2000. Century years are not leap years except where they are a multiple of 400. Hence, the years are not leap years 1700, 1800 and 1900 were not leap years and did not contain a February 29. But the year 2000 was a leap year, the first such century leap year since 1600.
+Valid inputs are leap year. Display an appropriate message if the user entered an invalid number.
+The program will continue to ask a year not unless the user entered 0, in which case the program will be terminated.
+Name the class LeapYearChecker
+Enter a year: 1800
+Invalid input. Input should be between 1900 to 2400
+Enter a year: 1900
+Invalid input. Input is not a leap year.
+Enter a year: 2392
+2392 is a leap year
+2396 is a leap year
+2400 is a leap year
+Enter a year: 0
+You entered 0. Program will terminate.
+List of leap years from 1900 to 2400.
+1804
+1904
+2004
+2104
+2204
+2304
+1808
+1908
+2008
+2108
+2208
+2308
+1812
+1912
+2012
+2112
+2212
+2312
+1816
+1916
+2016
+2116
+2216
+2316
+1820
+1920
+2020
+2120
+2220
+2320
+1824
+1924
+2024
+2124
+2224
+2324
+1828
+1928
+2028
+2128
+2228
+2328
+1832
+1932
+2032
+2132
+2232
+2332
+1836
+1936
+2036
+2136
+2236
+2336
+1840
+1940
+2040
+2140
+2240
+2340
+1844
+1944
+2044
+2144
+2244
+2344
+1848
+1948
+2048
+2148
+2248
+2348
+1852
+1952
+2052
+2152
+2252
+2352
+1856
+1956
+2056
+2156
+2256
+2356
+1860
+1960
+2060
+2160
+2260
+2360
+1864
+1964
+2064
+2164
+2264
+2364
+1868
+1968
+2068
+2168
+2268
+2368
+1872
+1972
+2072
+2172
+2272
+2372
+1876
+1976
+2076
+2176
+2276
+2376
+1880
+1980
+2080
+2180
+2280
+2380
+1884
+1984
+2084
+2184
+2284
+2384
+1888
+1988
+2088
+2188
+2288
+2388
+1892
+1992
+2092
+2192
+2292
+2392
+1896
+1996
+2096
+2196
+2296
+2396
+2000
+2400

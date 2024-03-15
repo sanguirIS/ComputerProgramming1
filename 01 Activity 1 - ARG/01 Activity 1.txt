@@ -1,0 +1,5 @@
+Draw a flowchart of a simple payroll system that will display an employee’s information.
+
+ Ask for the name of the employee.
+If the employee is full time, get his monthly salary rate. Then, display his name and salary.
+If the employee is part time, get his rate per hour and the total number of hours he worked for the entire month. Then, display his name and wage.

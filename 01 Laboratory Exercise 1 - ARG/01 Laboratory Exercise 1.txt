@@ -1,0 +1,4 @@
+Use PowerPoint to create flowcharts for the following problems.
+
+Find the largest among the three (3) numbers entered by the user.
+Display the first 10 even numbers

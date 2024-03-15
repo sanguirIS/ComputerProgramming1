@@ -1,0 +1,43 @@
+At the end of the exercise, the students should be able to:
+Implement decision using one-way, two-way, and multiple selections; and Combine conditions using logical operators.
+Materials:
+NetBeans IDE 8.2
+Java Development Kit (JDK) 8
+Instructions:
+1. Create a folder named LastName_FirstName (ex. Diaz_Jess) on your local drive.
+2. Launch NetBeans IDE.
+3. Click File > New Project > the New Project window appears.
+4. In the New Project window, click the Java category and select Java Application project and click the Next button.
+5. On the Name and Location page, perform the following:
+In the Project Name field, type GrossPayCalculator.
+In the Project Location field, browse and select your folder, then click the Open button.
+Click the Finish button.
+6. Write a simple payroll program that will display the employee's information. The program should perform the following:
+Ask the user to enter the name of the employee.
+Prompt the user to select between full time and part time by pressing either F (full time) or P (part time)
+If F is pressed, ask the user to enter his monthly salary. Then display his name and salary.
+If P is pressed, ask the user to type his rate (pay) per hour, the number of hours he worked, and the numbers of overtime. Then display his name and wage. The computation of overtime pay is: hours of overtimex (rate per hour × 125%)
+If an invalid letter is pressed, display an error message.
+7. Compile and execute the program.
+8. Debug syntax and logical errors if there is any in the program.
+9. Save the file.
+10. The following is the example output:
+Enter employee name: Jess Diaz
+Press F for Full Time or P for Part Time: P
+--- Part Time Employee ---
+Enter rate per hour: 82.10
+Enter no. of hours worked: 128
+Enter no. of overtime: 6
+Employee Name: Jess Diaz
+Basic Pay: 10508.8
+Overtime Pay: 615.75
+Gross Pay: 11124.55
+Figure 1
+Enter employee name: Jess Diaz
+Press F for Full Time or P for Part Time: F
+Full Time Employee
+Enter Basic Pay: 19349.50
+Employee Name: Jess Diaz
+Basic Pay: 19349.5
+Gross Pay: 19349.5
+Figure 2

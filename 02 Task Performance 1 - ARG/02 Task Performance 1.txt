@@ -1,0 +1,3 @@
+Draw different shapes using asterisk (*), such as Square, Oval, Triangle, Diamond. Using NetBeans, create a Java console program that uses println() statements to draw that item. 
+
+Upload a screenshot of your output. Name the class as Shapes.java

@@ -1,0 +1,18 @@
+In physics, an object that is in motion is said to have kinetic energy. The following formula can be used to determine a moving object’s kinetic energy:
+
+
+The variables in the formula are as follows: KE is the kinetic energy, m is the object’s mass in kilograms, and v is the object’s velocity in meters per second.
+
+Create a Java program with a function that accepts an object’s mass (in kilograms) and velocity (in meters per second) as arguments. The function should return the amount of kinetic energy that the object has. Ask the user to enter values for mass and velocity, and then call the function you created to get the object’s kinetic energy. 
+
+Sample output:
+
+Enter mass in kilograms: 71
+
+Enter velocity in meters per second:  5.5
+
+The object's kinetic energy is: 1073.88 J.
+
+Screenshot your code and output then upload the images to this Dropbox.
+
+For mobile users, you may use https://www.jdoodle.com/online-java-compiler/

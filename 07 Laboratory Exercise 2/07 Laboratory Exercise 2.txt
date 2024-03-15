@@ -1,0 +1,5 @@
+Write a Java program to create menu driven calculator that performs basic arithmetic operations using
+switch statement. Name the class as Calculator. The calculator should perform the following:
+The program should ask the user to input two (2) numbers and an arithmetic operator (+, -, *, /).
+It should perform operation according to the operator entered and print the entered numbers, the
+operator, and the result.

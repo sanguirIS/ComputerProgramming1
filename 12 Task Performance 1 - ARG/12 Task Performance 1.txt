@@ -1,0 +1,6 @@
+Create a simple 5-question quiz with three (3) choices that will display the score of the user. The quiz should be about your favorite game/series. Make use of control structures, arrays, and functions in your Java program. Upload the .java file and a screenshot of your output.
+Sample question and choices:
+Who was Naruto's teacher at the Ninja Academy?
+A. Iruka
+B. Jiraiya
+C. Kakashi

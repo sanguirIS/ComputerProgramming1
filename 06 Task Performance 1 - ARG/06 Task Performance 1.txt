@@ -1,0 +1,15 @@
+Using NetBeans, create a program that asks the user for the number of male and female students registered in a class/section. The program should display the total number of students and the percentage of males and females in the class.
+
+ 
+
+Sample output:
+
+Enter the number of males: 36
+
+Enter the number of females: 17
+
+Number of students = 53
+
+Male = 67.92%
+
+Female = 32.08%

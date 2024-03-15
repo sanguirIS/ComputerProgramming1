@@ -1,0 +1,20 @@
+Perform the following using NetBeans.
+
+1. Initialize six (6) variables based on the table below. Name the class ISLabVariable
+
+Data type	Variable Name	Value
+String	f_Name	Your first name.
+String	l_Name	Your last name.
+char	middle_ini	Your middle initial
+short	favNum	Your favorite number
+String	favCarChar	Your favorite cartoon or anime character
+String	favSubj	Your favorite subject
+2. Create statements that would print an output similar to the sample below. Use '+' to combine words and variable names. 
+
+My name is Veronica V. Velasquez.
+
+12 is my favorite number.
+
+I love Doraemon!
+
+My favorite subject is Computer Programming 1.
