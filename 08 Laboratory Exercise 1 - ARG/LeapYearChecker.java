@@ -1,42 +1,61 @@
 import java.util.Scanner;
 
+/**
+ * LeapYearChecker.java
+ *
+ * Displays the leap years from 1900 to 2400 starting from the user's
+ * valid input. The program keeps asking for a year until the user
+ * enters 0, which terminates the program.
+ *
+ * A year is a leap year if it is divisible by 4, except century years,
+ * which must also be divisible by 400.
+ */
 public class LeapYearChecker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Get start year from user
-        int startYear;
-        do {
-            System.out.print("Enter a year between 1900 and 2400 (or 0 to exit): ");
-            startYear = scanner.nextInt();
-        } while (startYear < 1900 || startYear > 2400);
+        while (true) {
+            System.out.print("Enter a year: ");
+            int year = scanner.nextInt();
 
-        // Exit if user enters 0
-        if (startYear == 0) {
-            System.out.println("You entered 0. Program will terminate.");
-            return;
-        }
+            // 0 terminates the program.
+            if (year == 0) {
+                System.out.println("You entered 0. Program will terminate.");
+                break;
+            }
 
-        // Check and display leap years from startYear to 2400
-        System.out.println("List of leap years from " + startYear + " to 2400:");
-        for (int year = startYear; year <= 2400; year++) {
-            if (isLeapYear(year)) {
-                System.out.println(year);
+            // Validate that the input is within the allowed range.
+            if (year < 1900 || year > 2400) {
+                System.out.println("Invalid input. Input should be between 1900 to 2400");
+                continue;
+            }
+
+            // The starting year itself must be a leap year.
+            if (!isLeapYear(year)) {
+                System.out.println("Invalid input. Input is not a leap year.");
+                continue;
+            }
+
+            // Display the leap years from the given year up to 2400.
+            for (int y = year; y <= 2400; y++) {
+                if (isLeapYear(y)) {
+                    System.out.println(y + " is a leap year");
+                }
             }
         }
 
         scanner.close();
     }
 
-    // Method to check if a year is a leap year
+    // Returns true if the given year is a leap year.
     public static boolean isLeapYear(int year) {
         if (year % 400 == 0) {
             return true;
-        } else if (year % 100 == 0) {
-            return false;
-        } else {
-            return year % 4 == 0;
         }
+        if (year % 100 == 0) {
+            return false;
+        }
+        return year % 4 == 0;
     }
 }

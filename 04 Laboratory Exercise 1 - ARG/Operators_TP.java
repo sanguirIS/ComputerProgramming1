@@ -1,45 +1,44 @@
+/**
+ * Operators_TP.java
+ *
+ * Calculates and prints the monthly net pay of an employee after
+ * applying the government tax, mandatory contribution, healthcare,
+ * and HMDF deductions.
+ */
 public class Operators_TP {
 
     public static void main(String[] args) {
-        // Employee information
+        // Employee information: name and salary before deductions.
         String employeeName = "Justine";
-        double salary = 35000.0; // Salary before deductions
+        double salary = 35000.0; // Monthly salary (before deductions)
 
-        // Deduction rates (as percentages)
-        final double gov_tax = 0.15; // 15%
-        final double sss_contri = 0.0363; // 3.63%
-        final double medic = 0.0125; // 1.25%
+        // Deduction rates and fixed deduction.
+        final double GOV_TAX = 0.15;     // Government Tax = 15%
+        final double SSS_CONTRI = 0.0363; // Mandatory Contribution = 3.63%
+        final double MEDIC = 0.0125;     // Healthcare = 1.25%
+        final double HMDF = 100.00;      // HMDF = PHP 100.00 (fixed amount)
 
-        // Fixed deduction
-        final double hmdf = 100.00;
+        // Calculate the individual deductions.
+        double govTax = salary * GOV_TAX;
+        double sssContri = salary * SSS_CONTRI;
+        double medic = salary * MEDIC;
+        double totalDeductions = govTax + sssContri + medic + HMDF;
 
-        // Calculate deductions
-        double govTax = salary * gov_tax;
-        double sssContri = salary * sss_contri;
-        double medical = salary * medic;
-        double totalDeductions = govTax + sssContri + medical + hmdf;
-        double netIncome = salary - totalDeductions;
+        // Net pay is the salary minus all deductions.
+        double netPay = salary - totalDeductions;
 
-        // Print employee information
-        System.out.println("Employee Name:");
-        System.out.println(employeeName);
-        System.out.println(); // Add a blank line for better formatting
-
-        System.out.println("Salary:");
-        System.out.printf("%.1f\n", salary);  // Format salary with one decimal place
+        // Print the employee information and the computed amounts.
+        System.out.println("Employee Name: " + employeeName);
+        System.out.printf("Salary: %.1f%n", salary);
+        System.out.println();
 
         System.out.println("Deductions");
-        System.out.println("Government Tax:");
-        System.out.printf("%.1f\n", govTax);  // Format tax with one decimal place
-        System.out.println("Mandatory Contribution:");
-        System.out.printf("%.1f\n", sssContri);  // Format contribution with one decimal place
-        System.out.println("Healthcare:");
-        System.out.printf("%.1f\n", medical);  // Format healthcare with one decimal place
-        System.out.println("HMDF:");
-        System.out.printf("%.1f\n", hmdf);  // Format HMDF with one decimal place
-        System.out.println(); // Add a blank line for better formatting
+        System.out.printf("Government Tax: %.1f%n", govTax);
+        System.out.printf("Mandatory Contribution: %.1f%n", sssContri);
+        System.out.printf("Healthcare: %.1f%n", medic);
+        System.out.printf("HMDF: %.1f%n", HMDF);
+        System.out.println();
 
-        System.out.println("Income:");
-        System.out.printf("%.1f\n", netIncome);  // Format net income with one decimal place
+        System.out.printf("Net Pay: %.1f%n", netPay);
     }
 }

@@ -1,0 +1,22 @@
+# Compiled Java bytecode
+*.class
+*.jar
+
+# NetBeans build output
+/build/
+/dist/
+/nbproject/private/
+/nbproject/build-impl.xml
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# OS-specific files
+.DS_Store
+Thumbs.db

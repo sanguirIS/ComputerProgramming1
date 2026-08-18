@@ -13,13 +13,20 @@ public class StudentStats {
 
         // Calculate total students and percentages
         int totalStudents = numMales + numFemales;
-        double malePercentage = (double) numMales / totalStudents * 100;
-        double femalePercentage = (double) numFemales / totalStudents * 100;
 
         // Print results
         System.out.println("Number of students = " + totalStudents);
-        System.out.printf("Male = %.2f%%\n", malePercentage);
-        System.out.printf("Female = %.2f%%\n", femalePercentage);
+
+        // Guard against division by zero when no students are registered.
+        if (totalStudents == 0) {
+            System.out.println("Male = 0.00%");
+            System.out.println("Female = 0.00%");
+        } else {
+            double malePercentage = (double) numMales / totalStudents * 100;
+            double femalePercentage = (double) numFemales / totalStudents * 100;
+            System.out.printf("Male = %.2f%%%n", malePercentage);
+            System.out.printf("Female = %.2f%%%n", femalePercentage);
+        }
 
         scanner.close(); // Close the Scanner to avoid resource leaks
     }

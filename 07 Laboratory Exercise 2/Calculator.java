@@ -1,62 +1,54 @@
 import java.util.Scanner;
 
+/**
+ * Calculator.java
+ *
+ * A menu-driven calculator that performs basic arithmetic operations
+ * (+, -, *, /) using a switch statement. The user enters two numbers
+ * and an operator, and the program prints the expression and result.
+ */
 public class Calculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Loop to handle multiple calculations
-        while (true) {
-            // Display menu
-            System.out.println("\nMenu:");
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Division");
-            System.out.println("5. Exit");
-            System.out.print("Enter your choice: ");
+        // Ask the user to input two numbers and an arithmetic operator.
+        System.out.print("Enter first number: ");
+        double num1 = scanner.nextDouble();
 
-            // Get user choice
-            int choice = scanner.nextInt();
+        System.out.print("Enter an operator (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
 
-            // Exit loop if user chooses 5
-            if (choice == 5) {
+        System.out.print("Enter second number: ");
+        double num2 = scanner.nextDouble();
+
+        double result;
+
+        // Perform the operation according to the operator entered.
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                System.out.println(num1 + " + " + num2 + " = " + result);
                 break;
-            }
-
-            // Get operands
-            System.out.print("Enter first number: ");
-            double num1 = scanner.nextDouble();
-            System.out.print("Enter second number: ");
-            double num2 = scanner.nextDouble();
-
-            // Perform calculation based on choice using switch statement
-            double result;
-            switch (choice) {
-                case 1:
-                    result = num1 + num2;
-                    System.out.println(num1 + " + " + num2 + " = " + result);
-                    break;
-                case 2:
-                    result = num1 - num2;
-                    System.out.println(num1 + " - " + num2 + " = " + result);
-                    break;
-                case 3:
-                    result = num1 * num2;
-                    System.out.println(num1 + " * " + num2 + " = " + result);
-                    break;
-                case 4:
-                    // Handle division by zero
-                    if (num2 == 0) {
-                        System.out.println("Error: Division by zero is not allowed.");
-                    } else {
-                        result = num1 / num2;
-                        System.out.println(num1 + " / " + num2 + " = " + result);
-                    }
-                    break;
-                default:
-                    System.out.println("Invalid choice.");
-            }
+            case '-':
+                result = num1 - num2;
+                System.out.println(num1 + " - " + num2 + " = " + result);
+                break;
+            case '*':
+                result = num1 * num2;
+                System.out.println(num1 + " * " + num2 + " = " + result);
+                break;
+            case '/':
+                // Handle division by zero.
+                if (num2 == 0) {
+                    System.out.println("Error: Division by zero is not allowed.");
+                } else {
+                    result = num1 / num2;
+                    System.out.println(num1 + " / " + num2 + " = " + result);
+                }
+                break;
+            default:
+                System.out.println("Invalid operator. Please use +, -, *, or /.");
         }
 
         scanner.close();
